@@ -1,6 +1,5 @@
 package com.example.readwritesplit;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,6 +16,10 @@ public class ReadWriteSplitApplication implements CommandLineRunner {
     }
 
     public static void main(String[] args) {
+
+        System.setProperty("aws.accessKeyId", "AKIA4A7OB22TIFJEFKWI");
+        System.setProperty("aws.secretAccessKey", "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");
+
         SpringApplication.run(ReadWriteSplitApplication.class, args);
     }
 

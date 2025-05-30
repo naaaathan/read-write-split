@@ -17,7 +17,7 @@ public class DataSourceConfig {
 
     private static final String USERNAME = "db_user";
     private static final String DATABASE_NAME = "test";
-    private static final String DATABASE_URL = "database-1.cluster-ro-cz4gsk08gabl.us-east-2.rds.amazonaws.com";
+    private static final String DATABASE_URL = "database-test-1.cluster-cz4gsk08gabl.us-east-2.rds.amazonaws.com";
 
     @Bean
     public static DataSource getHikariCPDataSource() {
