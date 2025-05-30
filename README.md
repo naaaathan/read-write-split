@@ -52,7 +52,8 @@ Attach this policy to your IAM user or role:
 Connect to Aurora as master user and run:
 
 ```sql
-CREATE USER "db_user" WITH LOGIN;
+CREATE USER db_user; 
+GRANT rds_iam TO db_user;
 
 CREATE TABLE test_data (
   id SERIAL PRIMARY KEY,
